@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* website body style */
+body{
+    @apply bg-backgroundColor text-secondaryColor
+}
+
+/* website common section style */
+header, footer{
+    @apply bg-primaryColor
+}
+
+/* header row style */
+.headerRow{
+    @apply flex justify-between items-center px-10 md:px-20 lg:px-32 py-5
+}
+
+/* footer row style */
+.footerRow{
+    @apply lg:flex lg:justify-between lg:items-center px-10 md:px-20 lg:px-32 py-5
+}
+
+/* full website row design */
+.customRow{
+    @apply px-10 md:px-20 lg:px-32 py-5 my-10
+}
+
+
+
+/* website logo style */
+.logo{
+    @apply w-12 h-12
+}
+
+/* mobile menu style */
+.mobileMenu{
+    @apply text-3xl font-bold text-secondaryColor
+}
+
+/* mobile nab link */
+.navigationLink{
+    @apply text-lg text-secondaryColor flex justify-start items-center uppercase font-semibold text-start my-2 lg:hover:border-b-2 lg:hover:border-secondaryColor lg:hover:duration-100
+}
+
+/* mobile nav link */
+.mobileNavLink{
+    @apply bg-primaryColor w-52 h-72 rounded px-4 py-4 -right-10 md:-right-[80px]
+}
+
+/* laptop nab link */
+.laptopNav{
+    @apply flex justify-center items-center gap-10 uppercase text-lg font-semibold text-secondaryColor
+}
+
+/* primary button style */
+.primaryButton{
+    @apply px-5 py-1 text-secondaryColor rounded-full bg-backgroundColor border-2 border-backgroundColor hover:bg-transparent text-lg flex justify-start items-center uppercase font-semibold text-start my-2
+}
+
+/* primary button style */
+.secondaryButton{
+    @apply px-5 py-1 text-secondaryColor rounded-full bg-primaryColor border-2 border-primaryColor hover:bg-transparent text-lg flex justify-start items-center uppercase font-semibold text-start my-2
+}
+
+/* footer design */
+.footerLogo{
+    @apply text-3xl text-center lg:text-start font-semibold uppercase text-secondaryColor
+}
+.info{
+    @apply text-lg text-center lg:text-start text-secondaryColor my-4
+}
+
+ .socialLink{
+    @apply flex justify-center lg:justify-start items-center gap-5 text-2xl text-secondaryColor
+}
+
+.socialLink a {
+    @apply hover:scale-110 hover:duration-1000
+}
+.footerLink{
+    @apply text-lg text-secondaryColor flex justify-center lg:justify-start items-center uppercase font-semibold text-start my-2 
+}
+.developerInfo{
+    @apply border-t-[0.5px] border-secondaryColor py-4 text-lg font-semibold text-secondaryColor text-center
+}
+
+/* headline design */
+.headline{
+    @apply text-4xl font-semibold text-center 
+}
+.subHeadline{
+    @apply text-xl text-center my-5
+}
+
+/* section title design */
+.sectionTitle{
+    @apply text-3xl uppercase font-semibold text-center border-y-4 py-2 border-primaryColor
+}
+
+/* gallery design */
+.gallery{
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-center items-center gap-5
+}
+
+/* team page design */
+.teamMember{
+    @apply lg:flex lg:justify-center lg:items-center lg:gap-20
+}
+
+.teamImage{
+    @apply w-60 h-60 rounded-full mx-auto
+}
+
+.teamMemberName{
+    @apply footerLogo mt-4 
+}
+
+.teamMemberDesignation{
+    @apply info bg-primaryColor font-semibold rounded lg:text-center
+}
+
+/* dashboard page design */
+.dashboardPage{
+    @apply lg:-ml-60 md:-ml-60
+}
+
+/* error message design */
+.errorMessage{
+    @apply text-2xl font-semibold text-red-500
+}
+
+/* loading page design */
+.loadingPage{
+    @apply flex justify-center items-center my-20
+  }
