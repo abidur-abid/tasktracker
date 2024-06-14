@@ -18,7 +18,7 @@ const ToDoSection = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/tasks');
+      const response = await fetch('https://tasktrackerserver.onrender.com/api/tasks');
       if (!response.ok) {
         throw new Error('Failed to fetch tasks');
       }
@@ -67,7 +67,7 @@ const ToDoSection = () => {
 
   const updateTaskStatus = async (taskId, status) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/tasks/${taskId}`, {
+      const response = await fetch(`https://tasktrackerserver.onrender.com/api/tasks/${taskId}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ const ToDoSection = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/tasks/${id}`, {
+      const response = await fetch(`https://tasktrackerserver.onrender.com/api/tasks/${id}`, {
         method: 'DELETE',
       });
       if (!response.ok) {

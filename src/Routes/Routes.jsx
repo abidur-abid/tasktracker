@@ -73,7 +73,7 @@ export const router = createBrowserRouter([
                 path: "/dashboard/todos/:id",
                 element: <UpdatedTask></UpdatedTask>,
                 loader: async ({ params }) => {
-                    return fetch(`http://localhost:5000/api/tasks/${params.id}`);
+                    return fetch(`https://tasktrackerserver.onrender.com/api/tasks/${params.id}`);
                   },
             },
             {

@@ -30,7 +30,7 @@ const UpdatedTaskForm = () => {
   const onSubmit = async (data) => {
 
     try {
-      const response = await fetch(`http://localhost:5000/api/tasks/${singleTask._id}`, {
+      const response = await fetch(`https://tasktrackerserver.onrender.com/api/tasks/${singleTask._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
